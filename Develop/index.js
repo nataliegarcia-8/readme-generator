@@ -1,9 +1,9 @@
+// load modules
 const inquirer = require("inquirer");
 const fs = require("fs");
-var generateMarkdown = require("./utils/generateMarkdown.js");
+const generateMarkdown = require("./utils/generateMarkdown.js");
 
-console.log(generateMarkdown);
-
+//command line prompt to fill in readme
 function promptUser() {
     return inquirer.prompt([
         {
@@ -52,16 +52,22 @@ function promptUser() {
         //         },
         //     ]
         // },
+        // {
+        //     type: "input",
+        //     name: "license",
+        //     message: "Please list all npm packages used separated by commas",
+        // },
         {
-            type: "input",
+            type: "list",
             name: "license",
             message: "Please list all npm packages used separated by commas",
+            choices: ["MIT", "Mozilla", "Github", "Eclipse", "Boost"]
         },
 
         {
             type: "input",
             name: "contributing",
-            message: "Please enter any contributions to your site, such as collaborators or third-party assets:",
+            message: "Please enter your guidelines for contributions:"
         },
 
         {
@@ -79,15 +85,15 @@ function promptUser() {
         {
             type: "input",
             name: "github",
-            message: "Please enter your github username:"
+            message: "Please enter your Github username:"
         }
     ])
 };
 
-
+//creates and writes readme using input provided
 promptUser()
     .then(data => {
-
+        if(data.license === "MIT"){ licenseBadge = "`[![MIT](https://img.shields.io/badge/NPM-MIT-green.svg)](https://opensource.org/licenses/MIT)`"}
         console.log(data)
 
         fs.writeFile("README.md", generateMarkdown(data), "utf8", function (err) {
@@ -103,15 +109,3 @@ promptUser()
     .catch(function (error) {
         console.log("error");
     });
-    // //function to write README file
-    // function writeToFile(fileName, data) {
-
-    // }
-
-    // //function to initialize program 
-    // function init() {
-
-    // }
-
-    // //function call to initialize program 
-    // init();
