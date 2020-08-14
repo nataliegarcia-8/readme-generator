@@ -6,7 +6,6 @@
 * [Usage](#usage)
 * [Links](#links)
 * [Contributing](#contributing)
-* [Tests](#tests)
 * [Questions](#questions)
 
 ## Description
@@ -20,12 +19,13 @@ The README generator is used to create a professional README and can be used for
 
 ## Links
 github repo: https://github.com/nataliegarcia-8/readme-generator
+(HTML file included in repo containing the walk through video.)
+
+video walk-through: https://drive.google.com/file/d/1kWgg9hiqQ1ptiCiul1QE89mUvHGZSVce/view
 
 ## Contributing
 Contributors welcomed. 
 
-## Tests
-N/A
 
 ## Questions 
 ### If you have any questions please contact me at:

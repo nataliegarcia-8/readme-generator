@@ -1,4 +1,4 @@
-# Project 1 
+# Project 1
 
 ## Table of Contents
 * [Description](#description)
@@ -10,27 +10,27 @@
 * [Questions](#questions)
 
 ## Description
-This is a great project!
+this is an awesome project
 
 ## Installation 
-these are my install instructions
+install me
 
 ## Usage
-this is what my app is used for 
+usage 
 
 ## License
-[![MPL-2.0](https://img.shields.io/badge/NPM-MPL-green.svg)](https://opensource.org/licenses/MPL-2.0)
+[![Apache](https://img.shields.io/badge/NPM-Apache-green.svg)](https://opensource.org/licenses/Apache-2.0)
 
 
 ## Contributing
-yes I want contributors
+contribute
 
 ## Tests
-test me 
+test me
 
 ## Questions 
 ### If you have any questions please contact me at:
 Email: myemail@gmail.com
 
-Github: https://github.com/mygithubusername
+Github: https://github.com/username
 
