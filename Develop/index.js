@@ -34,14 +34,14 @@ function promptUser() {
         {
             type: "list",
             name: "license",
-            message: "Please list all npm packages used separated by commas",
-            choices: ["MIT", "Mozilla", "Github", "Eclipse", "Boost"]
+            message: "Please select the license needed for your project",
+            choices: ["MIT", "Mozilla", "Apache", "Eclipse"]
         },
 
         {
             type: "input",
             name: "contributing",
-            message: "Please enter your guidelines for contributions:"
+            message: "Please enter your guidelines for contributors:"
         },
 
         {
@@ -67,22 +67,24 @@ function promptUser() {
 //creates and writes readme using input provided
 promptUser()
     .then(data => {
+        //prints badges
         if(data.license === "MIT"){ licenseBadge = "[![MIT](https://img.shields.io/badge/NPM-MIT-green.svg)](https://opensource.org/licenses/MIT)"}
-        if(data.license === "MIT"){ licenseBadge = "[![MIT](https://img.shields.io/badge/NPM-MIT-green.svg)](https://opensource.org/licenses/MIT)"}
-        if(data.license === "MIT"){ licenseBadge = "[![MIT](https://img.shields.io/badge/NPM-MIT-green.svg)](https://opensource.org/licenses/MIT)"}
-        if(data.license === "MIT"){ licenseBadge = "[![MIT](https://img.shields.io/badge/NPM-MIT-green.svg)](https://opensource.org/licenses/MIT)"}
+        if(data.license === "Mozilla"){ licenseBadge = "[![MPL-2.0](https://img.shields.io/badge/NPM-MPL-green.svg)](https://opensource.org/licenses/MPL-2.0)"}
+        if(data.license === "Apache"){ licenseBadge = "[![Apache](https://img.shields.io/badge/NPM-Apache-green.svg)](https://opensource.org/licenses/Apache-2.0)"}
+        if(data.license === "Eclipse"){ licenseBadge = "[![EPL](https://img.shields.io/badge/NPM-EPL-green.svg)](https://opensource.org/licenses/EPL-2.0)"}
         console.log(data)
-
-        fs.writeFile("README.md", generateMarkdown(data), "utf8", function (err) {
-
-            if (err) {
-                console.log(err)
-            }
-
-        })
-        console.log("readme created")
-
+        
+    // })
+    // .then(data => {
+            fs.writeFile("README.md", generateMarkdown(data), "utf8", function (err) {
+    
+                if (err) {
+                    console.log(err)
+                }
+    
+            })
+            console.log("readme created")
     })
     .catch(function (error) {
-        console.log("error");
+        console.log(error);
     });

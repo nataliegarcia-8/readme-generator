@@ -21,7 +21,7 @@ ${data.installation}
 ${data.usage}
 
 ## License
-${[![data.license](licenseBadge)]}
+${licenseBadge}
 
 
 ## Contributing
@@ -38,11 +38,6 @@ Github: https://github.com/${data.github}
 
 `
 ;
-}
-
-//prints badges for each npm listed
-function printLicenses(data) {
-  if(data.license === "MIT"){ data.license = "`[![MIT](https://img.shields.io/badge/NPM-MIT-green.svg)](https://www.npmjs.com/package/${arr[i]})`"}
 }
 
 module.exports = generateMarkdown;

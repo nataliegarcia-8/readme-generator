@@ -1,4 +1,4 @@
-# dfd
+# Project 1 
 
 ## Table of Contents
 * [Description](#description)
@@ -10,28 +10,27 @@
 * [Questions](#questions)
 
 ## Description
-dfbdfb
+This is a great project!
 
 ## Installation 
-dfbd
+these are my install instructions
 
 ## Usage
-dfb
+this is what my app is used for 
 
 ## License
-[![MIT](https://img.shields.io/badge/NPM-MIT-green.svg)](https://opensource.org/licenses/MIT)
+[![MPL-2.0](https://img.shields.io/badge/NPM-MPL-green.svg)](https://opensource.org/licenses/MPL-2.0)
 
 
 ## Contributing
-dfvbdfb
+yes I want contributors
 
 ## Tests
-dfbdf
+test me 
 
 ## Questions 
 ### If you have any questions please contact me at:
-Email: df
-"
-"
-Github: https://github.com/df
+Email: myemail@gmail.com
+
+Github: https://github.com/mygithubusername
 
