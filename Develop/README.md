@@ -19,7 +19,7 @@ dfbd
 dfb
 
 ## License
-`[![MIT](https://img.shields.io/badge/NPM-MIT-green.svg)](https://opensource.org/licenses/MIT)`
+[![MIT](https://img.shields.io/badge/NPM-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
 
 ## Contributing

@@ -31,32 +31,6 @@ function promptUser() {
             message: "Please enter the usage information for your project:"
         },
 
-        // {
-        //     type: "checkbox",
-        //     name: "license",
-        //     message: "Please choose a licensing for your project:",
-        //     choices: [
-        //         {
-        //             name: "Express",
-        //             value: {
-        //                 title: "Express",
-        //                 link: "express"
-        //             }
-        //         },
-        //         {
-        //             name: "Inquirer",
-        //             value: {
-        //                 title: "Inquirer",
-        //                 link: "inquirer"
-        //             }
-        //         },
-        //     ]
-        // },
-        // {
-        //     type: "input",
-        //     name: "license",
-        //     message: "Please list all npm packages used separated by commas",
-        // },
         {
             type: "list",
             name: "license",
@@ -93,7 +67,10 @@ function promptUser() {
 //creates and writes readme using input provided
 promptUser()
     .then(data => {
-        if(data.license === "MIT"){ licenseBadge = "`[![MIT](https://img.shields.io/badge/NPM-MIT-green.svg)](https://opensource.org/licenses/MIT)`"}
+        if(data.license === "MIT"){ licenseBadge = "[![MIT](https://img.shields.io/badge/NPM-MIT-green.svg)](https://opensource.org/licenses/MIT)"}
+        if(data.license === "MIT"){ licenseBadge = "[![MIT](https://img.shields.io/badge/NPM-MIT-green.svg)](https://opensource.org/licenses/MIT)"}
+        if(data.license === "MIT"){ licenseBadge = "[![MIT](https://img.shields.io/badge/NPM-MIT-green.svg)](https://opensource.org/licenses/MIT)"}
+        if(data.license === "MIT"){ licenseBadge = "[![MIT](https://img.shields.io/badge/NPM-MIT-green.svg)](https://opensource.org/licenses/MIT)"}
         console.log(data)
 
         fs.writeFile("README.md", generateMarkdown(data), "utf8", function (err) {

@@ -33,7 +33,7 @@ ${data.tests}
 ## Questions 
 ### If you have any questions please contact me at:
 Email: ${data.email}
-"\n"
+
 Github: https://github.com/${data.github}
 
 `
@@ -44,14 +44,6 @@ Github: https://github.com/${data.github}
 function printLicenses(data) {
   if(data.license === "MIT"){ data.license = "`[![MIT](https://img.shields.io/badge/NPM-MIT-green.svg)](https://www.npmjs.com/package/${arr[i]})`"}
 }
-// function printLicenses(str) {
-//   const arr = str.split(",").map(x => x.trim()).map(x => x.replace("-", '&#45;'))
-//   const markdown = []
-//   for (let i = 0; i < arr.length; i++) {
-//     const link = `[![Generic badge](https://img.shields.io/badge/NPM-${arr[i]}-green.svg)](https://www.npmjs.com/package/${arr[i]})`;
-//     markdown.push(link)
-//   }
-//   return markdown.join(" ")
-// }
+
 module.exports = generateMarkdown;
 
